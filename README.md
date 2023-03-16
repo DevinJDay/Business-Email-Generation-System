@@ -15,18 +15,16 @@ emails based on a base template, tailored to each type of customer.
 # GitHub Repository Link:
 https://github.com/DevinJDay/cs-665-assignment-3
 
-# Implementation Description 
+# Implementation Description
 
-
-For each assignment, please answer the following:
-
-- Explain the level of flexibility in your implementation, including how new object types can
-be easily added or removed in the future.
-- Discuss the simplicity and understandability of your implementation, ensuring that it is
-easy for others to read and maintain.
-- Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were
-chosen.
+I implemented the Decorator Pattern in this assignment, as we need to dynamically and transparently add responsibilities to specific objects, without impacting other objects, and to enable the removal of responsibilities when necessary. 
+The "Component" is the abstract managementSystem class, which provides a template (sendToTarget() method) of sending a message for the target customer segment (not specified here). 
+The customers package contains the "Concrete Components", which are different customer segments. 
+They extend the managementSystem class and specify the target customer segment. We can easily add more or delete customer segment in this package.
+The emails package contains the "Decorator" and "Concrete Decorator", extending the managementSystem class. The decorators contain an instance of the target customer.
+The "Decorator" emailBase class provides a template of sending a base message to the target customer segment. 
+The "Concrete Decorator" specificEmail sends both a base message and a specific message to the target customer (defined when calling the constructor). 
+We can easily create a new message to a target customer segment using its constructor.
 
 
 # Maven Commands
