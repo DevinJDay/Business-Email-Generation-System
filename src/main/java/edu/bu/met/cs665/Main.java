@@ -1,38 +1,44 @@
 /**
- * Name: FIRST_NAME LAST_NAME
+ * Name: Jie Dai
  * Course: CS-665 Software Designs & Patterns
- * Date: MM/DD/YYYY
+ * Date: 03/15/2023
  * File Name: Main.java
- * Description: Write a description for this class
+ * Description: main entry point
  */
 
 package edu.bu.met.cs665;
-
-import edu.bu.met.cs665.example1.Person;
+import edu.bu.met.cs665.customers.*;
+import edu.bu.met.cs665.emails.*;
 
 /**
  * This is the Main class.
  */
 public class Main {
-
-  /**
-   * A main method to run examples.
-   * You may use this method for development purposes as you start building your
-   * assignments/final project.  This could prove convenient to test as you are developing.
-   * However, please note that every assignment/final projects requires JUnit tests.
-   */
   public static void main(String[] args) {
-    System.out.println("This is a test message from the Main class (Main.java file)");
-  }
+    business businessSegment = new business();
+    returning returningSegment = new returning();
+    frequent frequentSegment = new frequent();
+    newCustomer newSegment = new newCustomer();
+    vip VIPSegment = new vip();
 
-  /**
-   * This method performs XYZ and returns String.
-   *
-   * @return String
-   */
-  private String doIt() {
-    Person student = new Person("John", "Doe");
-    return student.getLastName() + ',' + student.getFirstName();
+    specificEmail toBusiness = new specificEmail(businessSegment);
+    specificEmail toReturning = new specificEmail(returningSegment);
+    specificEmail toFrequent = new specificEmail(frequentSegment);
+    specificEmail toNew = new specificEmail(newSegment);
+    specificEmail toVIP = new specificEmail(VIPSegment);
+
+    toBusiness.sendMessage("Greetings! This is our newest opportunities for you!");
+    toReturning.sendMessage("Greetings! How's your last experience with us?");
+    toFrequent.sendMessage("Greetings! Consider becoming our VIP to be better served!");
+    toNew.sendMessage("Greetings! Welcome to use our service!");
+    toVIP.sendMessage("Greetings This is our new promotion as a Thank-you gift to VIPs!");
+
+
+
+
+
+
+
   }
 
 }
