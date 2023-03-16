@@ -25,6 +25,7 @@ The emails package contains the "Decorator" and "Concrete Decorator", extending 
 The "Decorator" emailBase class provides a template of sending a base message to the target customer segment. 
 The "Concrete Decorator" specificEmail sends both a base message and a specific message to the target customer (defined when calling the constructor). 
 We can easily create a new message to a target customer segment using its constructor.
+By using the Decorator Pattern with abstract classes and inheritances, we can avoid duplicate coding.
 
 
 # Maven Commands
