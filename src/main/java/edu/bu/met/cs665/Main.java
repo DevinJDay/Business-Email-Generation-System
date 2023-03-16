@@ -12,6 +12,9 @@ import edu.bu.met.cs665.emails.*;
 
 /**
  * This is the Main class.
+ * It created one instance of each customer type
+ * and one instance of a specific email message for each customer type
+ * The email message contains a base message (specifying the target customer) and a specific message as input below
  */
 public class Main {
   public static void main(String[] args) {

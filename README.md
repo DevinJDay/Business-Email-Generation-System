@@ -1,16 +1,19 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Jie Dai                    |
+| Date         | 03/15/2023                 |
+| Course       | Spring                     |
+| Assignment # | 3                          |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+A company serves various customer segments, including Business, Returning, Frequent, New,
+and VIP. The management requires an efficient solution to send personalized emails to their
+customers. To achieve this, they require a custom application that can automatically generate
+emails based on a base template, tailored to each type of customer.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/DevinJDay/cs-665-assignment-3
 
 # Implementation Description 
 
